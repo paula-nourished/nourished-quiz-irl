@@ -1379,10 +1379,15 @@ if (isPriorities(current)) {
     const sku = winner.toUpperCase();
     const url = BOOTS_URLS[sku];
 
-    if (url && typeof window !== "undefined") {
-      window.location.href = url;
-      return null; // stop rendering UI
-    }
+if (url && typeof window !== "undefined") {
+  // Break out of the iframe and navigate the parent page
+  try {
+    window.top.location.href = url;     // most reliable
+  } catch (e) {
+    window.location.href = url;         // fallback
+  }
+  return null; // stop rendering UI
+}
   }
 
   // Fallback if no winner (rare)
