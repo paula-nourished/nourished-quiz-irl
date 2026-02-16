@@ -811,19 +811,19 @@ function ProductResultView({ code, tallies, kiosk }) {
 
 // ---- Boots URL map (SKU → product page) ADDED FOR ONLINE ONLY
 const BOOTS_URLS = {
-  BMCA: "https://www.boots.com/nourished-bmca-nutrient-stacks-30-gummies-10378545",
-  CPE:  "https://www.boots.com/nourish3d-cpe-nutrient-stacks-30-gummies-10378546",
-  ECP:  "https://www.boots.com/nourish3d-ecp-nutrient-stacks-30-gummies-10378547",
-  EIC:  "https://www.boots.com/nourish3d-eic-nutrient-stacks-30-gummies-10378548",
-  EPI:  "https://www.boots.com/nourish3d-epi-nutrient-stacks-30-gummies-10378549",
-  GSI:  "https://www.boots.com/nourish3d-gsi-nutrient-stacks-30-gummies-10378550",
-  HCP:  "https://www.boots.com/nourish3d-hcp-nutrient-stacks-30-gummies-10378551",
-  HPES: "https://www.boots.com/nourish3d-hpes-nutrient-stacks-30-gummies-10378552",
-  MECA: "https://www.boots.com/nourish3d-meca-nutrient-stacks-30-gummies-10378553",
-  MJB:  "https://www.boots.com/nourish3d-mjb-nutrient-stacks-30-gummies-10378554",
-  RNP:  "https://www.boots.com/nourish3d-rnp-nutrient-stacks-30-gummies-10378555",
-  SHP:  "https://www.boots.com/nourish3d-shp-nutrient-stacks-30-gummies-10378556",
-  SPE:  "https://www.boots.com/nourish3d-spe-nutrient-stacks-30-gummies-10378557"
+  BMCA: "https://www.boots.ie/nourished-bmca-nutrient-stacks-30-gummies-10378545",
+  CPE:  "https://www.boots.ie/nourish3d-cpe-nutrient-stacks-30-gummies-10378546",
+  ECP:  "https://www.boots.ie/nourish3d-ecp-nutrient-stacks-30-gummies-10378547",
+  EIC:  "https://www.boots.ie/nourish3d-eic-nutrient-stacks-30-gummies-10378548",
+  EPI:  "https://www.boots.ie/nourish3d-epi-nutrient-stacks-30-gummies-10378549",
+  GSI:  "https://www.boots.ie/nourish3d-gsi-nutrient-stacks-30-gummies-10378550",
+  HCP:  "https://www.boots.ie/nourish3d-hcp-nutrient-stacks-30-gummies-10378551",
+  HPES: "https://www.boots.ie/nourish3d-hpes-nutrient-stacks-30-gummies-10378552",
+  MECA: "https://www.boots.ie/nourish3d-meca-nutrient-stacks-30-gummies-10378553",
+  MJB:  "https://www.boots.ie/nourish3d-mjb-nutrient-stacks-30-gummies-10378554",
+  RNP:  "https://www.boots.ie/nourish3d-rnp-nutrient-stacks-30-gummies-10378555",
+  SHP:  "https://www.boots.ie/nourished-shp-nutrient-stacks-30-gummies-10378556",
+  SPE:  "https://www.boots.ie/nourish3d-spe-nutrient-stacks-30-gummies-10378557"
 };
 
 // ---- Main
