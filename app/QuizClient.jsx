@@ -999,17 +999,21 @@ function setAnswer(qid, value, mode = "single") {
 }
 
 
-  function canContinue() {
-    if (step === 0) return true;
-    if (!current) return true;
-    if (current.type === "slider") return true;
-    if (current.required === false) return true;
-    const v = answers[current.id];
-    if (isExercise(current)) return Array.isArray(v) && v.length > 0;
-    // if (isPriorities(current)) return Array.isArray(v) && v.length > 0 && v.length <= 2;
-	if (isPriorities(current)) return Boolean(v);
-    return current.type === "multi" ? true : Boolean(v);
-  }
+function canContinue() {
+  if (step === 0) return true;
+  if (!current) return true;
+  if (current.type === "slider") return true;
+  if (current.required === false) return true;
+
+  const v = answers[current.id];
+
+  if (isExercise(current)) return Array.isArray(v) && v.length > 0;
+  if (isPriorities(current)) return Array.isArray(v) && v.length === 2;
+
+  return current.type === "multi"
+    ? Array.isArray(v) && v.length > 0
+    : Boolean(v);
+}
 
   // Identify special titles
   const isSpecificDiet = (q) => titleIncludes(q, "specific diet");
